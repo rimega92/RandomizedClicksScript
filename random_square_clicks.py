@@ -30,10 +30,17 @@ def get_elapsed_time(time):
     time_seconds = int(time % 60)
     return time_hours, time_minutes, time_seconds
 
+def print_welcome_message():
+    print("================================================")
+    print("🖱️ Welcome to the Random Square Clicks Script 💻")
+    print("================================================")
+
 # Main function
 def main():
     clicks_made = 0
     start_time = time.time()
+
+    print_welcome_message()
 
     while (time.time() - start_time) < TOTAL_TIME_SECONDS:
         # Generate random click coordinates within the square

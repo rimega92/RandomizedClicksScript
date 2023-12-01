@@ -43,17 +43,20 @@ def main():
     print_welcome_message()
 
     while (time.time() - start_time) < TOTAL_TIME_SECONDS:
-        # Generate random click coordinates within the square
-        x = random.randint(POSITION_X, POSITION_X + SQUARE_SIZE)
-        y = random.randint(POSITION_Y, POSITION_Y + SQUARE_SIZE)
+        # Generate random number of clicks between 1 and 5
+        num_clicks = random.randint(1, 5)
+        for _ in range(num_clicks):
+            # Generate random click coordinates within the square
+            x = random.randint(POSITION_X, POSITION_X + SQUARE_SIZE)
+            y = random.randint(POSITION_Y, POSITION_Y + SQUARE_SIZE)
 
-        # Verify and adjust coordinates if they're outside the square
-        x, y = check_bounds(x, y)
+            # Verify and adjust coordinates if they're outside the square
+            x, y = check_bounds(x, y)
 
-        # Move the cursor to the coordinates and perform a click
-        pyautogui.moveTo(x, y)
-        pyautogui.click()
-        clicks_made += 1
+            # Move the cursor to the coordinates and perform a click
+            pyautogui.moveTo(x, y)
+            pyautogui.click()
+            clicks_made += 1
 
         # Calculate elapsed time and format it
         elapsed_time = time.time() - start_time

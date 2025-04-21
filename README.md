@@ -62,6 +62,35 @@ Before running, you can adjust the script's parameters by editing the **Configur
     ```
 5.  The script will start, display the welcome message, and then show the updating status line.
 
+## Example Output
+
+Here's an example of what you might see in your console when running the script (assuming the script's internal messages are also in English):
+
+```text
+========================================================
+🖱️  Welcome to the Random Clicks Script v2.0 💻
+========================================================
+ - Total Duration: 03:00:00
+ - Click Area: 500x500 pixel square in the center.
+ - Pauses between bursts: 5.0 - 30.0 seconds.
+ - Clicks per burst: 1 - 5.
+--------------------------------------------------------
+ℹ️  INFO: To stop the script, press Ctrl+C.
+ℹ️  INFO: Or move the mouse to the top-left corner.
+--------------------------------------------------------
+Starting script...
+[ Progress: 00:00:22 / 03:00:00 ] [ Total Clicks: 12 ] [ Next Pause: 18.72s ]          
+[...] (The status line above updates continuously in place)
+[ Progress: 01:45:30 / 03:00:00 ] [ Total Clicks: 5103 ] [ Next Pause: 7.34s ]        
+[...] (Script continues running and updating the status line)
+[ Progress: 03:00:00 / 03:00:00 ] [ Total Clicks: 10250 ] [ Next Pause: 25.11s ]       
+======================================================================
+✅ Script finished: Total execution time reached.
+Total clicks performed: 10250
+======================================================================
+Closing script.
+```
+
 ## 🛑 How to Stop the Script
 
 You can safely stop the script at any time using one of these methods:

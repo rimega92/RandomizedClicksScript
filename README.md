@@ -64,7 +64,7 @@ Before running, you can adjust the script's parameters by editing the **Configur
 
 ## Example Output
 
-Here's an example of what you might see in your console when running the script (assuming the script's internal messages are also in English):
+Here's an example of what you might see in your console when running the script:
 
 ```text
 ========================================================
